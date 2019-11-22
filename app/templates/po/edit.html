@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-2 my-5">
+            <form action="{{ url_for('message_update', name=entry.msgid) }}">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">MSGID</label>
+                    <input name="msgid" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           value="{{ entry.msgid }}">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">MSGSTR</label>
+                    <input value="{{ entry.msgstr }}" name="msgstr" type="text" class="form-control" id="exampleInputPassword1" >
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
