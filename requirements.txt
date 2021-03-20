@@ -4,7 +4,7 @@ Flask==1.1.1
 Flask-Babel==0.12.2
 flask-paginate==0.5.5
 itsdangerous==1.1.0
-Jinja2==2.10.3
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 polib==1.1.0
 pytz==2019.3
